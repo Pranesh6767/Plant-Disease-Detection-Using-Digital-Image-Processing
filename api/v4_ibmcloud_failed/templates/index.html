@@ -1,0 +1,37 @@
+<!-- templates/index.html -->
+<html>
+  <head>
+    <title>Plant disease detector</title>
+    <link rel="stylesheet" href="/static/style1.css">
+  </head>
+  <style>
+body {
+  background-image: url('https://pixnio.com/free-images/2018/08/28/2018-08-28-18-16-15-1200x800.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+  <body>
+    <h1>Plant disease detection Application</h1>
+      <h1>Version: {{version1}}</h1>
+          <h1>Fill up these details and upload the image</h1>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <h3>Plant Name:</h3>
+
+      <select name="Name"> <!-- note the name -->
+        <option value="none">Select Plant</option>
+        <option value="apple">Apple</option>
+        <option value="corn">Corn</option>
+        <option value="grapes">Grapes</option>
+        <option value="potato">Potato</option>
+        <option value="tomatp">Tomato</option>
+    </select>
+
+      <h3>Image</h3>
+      <input type="file" name="data_file" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

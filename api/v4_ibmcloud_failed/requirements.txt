@@ -1,0 +1,6 @@
+Flask==1.1.2
+numpy==1.19.5
+opencv-python==4.5.1.48
+scikit-image==0.18.1
+scikit-learn==0.24.1
+opencv-python-headless==4.5.1.48
